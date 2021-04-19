@@ -46,5 +46,13 @@ fn main() {
     println!("Array: {}", z[1]);
     println!("Array: {}", z[2]);
 
+    // Functions
+    println!("Function Call: {}", add_hundred(400));
 
+}
+
+
+fn add_hundred(x: i32)-> i32 {
+    let z = x + 100;
+    z       // No semi-colon in case of return from a function
 }
