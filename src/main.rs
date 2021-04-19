@@ -49,10 +49,36 @@ fn main() {
     // Functions
     println!("Function Call: {}", add_hundred(400));
 
+    // Loops
+    looping_style();
+    simple_loop();
+
+
 }
 
 
 fn add_hundred(x: i32)-> i32 {
-    let z = x + 100;
-    z       // No semi-colon in case of return from a function
+    if x % 2 == 0 {
+        x * 100
+    } else {
+        x + 100
+    } // No semi-colon in case of return from a function
+}
+
+fn looping_style() {
+    for i in (1..100).rev() {       // rewind loop
+        println!("{}", i);
+    }
+}
+
+fn simple_loop() {
+    let mut a = 0;
+    loop {
+        if a < 5 {
+            println!("Value of a: {}", a);
+            a += 1;
+        }else {
+            break;
+        }
+    }
 }
