@@ -18,8 +18,33 @@ fn main() {
     // Data types
     let signed_variable: i32 = -12343;
     let unsigned_variable: i32 = 1234567;
+    let floated_number: f32 = 5.00;     // or can use f64
+    let bool_var = true;    // or can nbe false\
+
     // Two types of variables ; signed and unsigned
     // length could be: 8,16,32,64, 128 or arch
+
+    // addition
+    let sum = 5+25;
+
+    // subtraction
+    let difference = 50-45;
+
+    // Multiplication
+    let product = 67*100;
+
+    // Compound types
+    //tuple
+    let x = (1,2,3,4);
+    println!("Tuple: {}", x.0);
+    println!("Tuple: {}", x.1);
+    println!("Tuple: {}", x.2);
+
+    // Array
+    let z = [1,2,3,4,5];
+    println!("Array: {}", z[0]);
+    println!("Array: {}", z[1]);
+    println!("Array: {}", z[2]);
 
 
 }
